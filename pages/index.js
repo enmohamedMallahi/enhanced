@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 	const data = {
@@ -15,7 +15,7 @@ export default function Home() {
 			</Head>
 			<div className='max-w-screen-2xl md:h-screen px-4 md:px-8 mx-auto'>
 				<header className='flex justify-between items-center py-4 mb-8 md:mb-12 xl:mb-16'>
-					<a
+					<Link
 						href='/'
 						className='inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5'
 						aria-label='logo'
@@ -31,12 +31,12 @@ export default function Home() {
 							<path d='M96 0V47L48 94H0V47L48 0H96Z' />
 						</svg>
 						Enhanced
-					</a>
+					</Link>
 
 					<nav className='hidden lg:flex items-center gap-8'>
-						<a href='#' className='text-blue-500  font-semibold'>
+						<Link href='/' className='text-blue-500  font-semibold'>
 							Home
-						</a>
+						</Link>
 						<a
 							href='#'
 							className='text-gray-600 hover:text-blue-500 active:text-blue-700  font-semibold transition duration-100'
@@ -260,9 +260,9 @@ export default function Home() {
 						Our <span className='text-blue-500'>Vision</span>
 					</h3>
 					<p className='mb-4'>
-						Our vision as an IoT company is to revolutionize people's lives and
-						work through intelligent, connected devices and systems that enhance
-						efficiency and improve quality of life. We aim to deliver
+						Our vision as an IoT company is to revolutionize people&apos;s lives
+						and work through intelligent, connected devices and systems that
+						enhance efficiency and improve quality of life. We aim to deliver
 						cutting-edge, reliable, secure and easy to use IoT solutions.
 					</p>
 					<a
@@ -512,7 +512,7 @@ export default function Home() {
 							</h3>
 							<p class='text-gray-500'>
 								IoT can bring benefits but also poses security risks like
-								unauthorized access, hacking and malware. It's important to
+								unauthorized access, hacking and malware. It&apos;s important to
 								secure IoT devices and networks to protect against these risks,
 								by using strong passwords, keeping software and firmware up to
 								date, and using encryption to protect data.
@@ -564,7 +564,7 @@ export default function Home() {
 					<div class='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 border-t gap-12 lg:gap-8 pt-10 lg:pt-12 mb-16'>
 						<div class='col-span-full lg:col-span-2'>
 							<div class='lg:-mt-2 mb-4'>
-								<a
+								<Link
 									href='/'
 									class='inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2'
 									aria-label='logo'
@@ -580,7 +580,7 @@ export default function Home() {
 										<path d='M96 0V47L48 94H0V47L48 0H96Z' />
 									</svg>
 									Enhanced
-								</a>
+								</Link>
 							</div>
 
 							<p class='text-gray-500 sm:pr-8 mb-6'>
